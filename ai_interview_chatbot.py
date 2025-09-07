@@ -3,13 +3,12 @@ import requests
 import pandas as pd
 import os
 import re
-from dotenv import load_dotenv
+
 from auth import show_login_signup
 
 
 # Load environment variables from .env file
-load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = st.secrets["general"]["GEMINI_API_KEY"]
 
 
 # --- STREAMLIT CONFIG ---
