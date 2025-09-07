@@ -6,6 +6,7 @@ import re
 from dotenv import load_dotenv
 from auth import show_login_signup
 
+st.write("🔍 Logged in state:", st.session_state.get("logged_in"))
 
 # Load environment variables from .env file
 load_dotenv()
@@ -19,10 +20,10 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
 if not show_login_signup():
     st.stop()
-# --- LOVABLE, CHATGPT-LIKE DARK THEME & CSS ---
+
+
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
