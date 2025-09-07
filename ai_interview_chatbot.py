@@ -8,7 +8,7 @@ from auth import show_login_signup
 
 
 # Load environment variables from .env file
-GEMINI_API_KEY = st.secrets["general"]["GEMINI_API_KEY"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 
 # --- STREAMLIT CONFIG ---
