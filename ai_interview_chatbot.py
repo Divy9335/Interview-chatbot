@@ -3,11 +3,18 @@ import requests
 import pandas as pd
 import os
 import re
-
+# if you want to use this chta bot using env file use the below line else comment it 
+#from dotenv import load_dotenv
 from auth import show_login_signup
 
 
-# Load environment variables from .env file
+
+# Load environment variables from .env file if you are useing dotenv then uncomment the below two line
+#load_dotenv()
+#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+
+#use this whith streamlit cloude sever if using dotenv comment it and uncomment dotenv
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 
